@@ -1,0 +1,306 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 992px) {
+    .navbar-nav .nav-item {
+        padding: 10px; 
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+}
+
+
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00c3ff;
+    transform: scale(1.1);
+}
+
+.nav-item{
+    margin-right: 20px;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel img {
+    height: 88vh;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* Navbar styles */
+.navbar {
+    background-color: white !important; /* Set navbar background to white */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure navbar is above slideshow */
+}
+
+.navbar.scrolled {
+    background-color: white !important; /* Background remains white when scrolled */
+}
+
+/* Navbar links when scrolled */
+.navbar.scrolled .nav-link {
+    color: #333; /* Dark text for better visibility */
+}
+
+/* Navbar brand */
+.navbar-brand img{
+    width:150px;
+    height: auto;
+}
+
+.navbar.scrolled .nav-link:hover {
+    color: #00c3ff !important; /* Bootstrap blue */
+}
+
+
+
+
+
+
+
+
+/* Carousel images */
+.carousel img {
+    height: 100vh;
+    object-fit: cover;
+    margin-top: 0; /* Ensure no gap under the navbar */
+}
+
+/* Horizontal scrolling for cards */
+.scrollable-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+.scrollable-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner look */
+}
+
+
+/* Social media links */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: inherit;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth effect */
+    display: inline-block;
+}
+
+
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Slightly enlarges the icon */
+    color: #25D366; /* Change to green for WhatsApp, or customize per icon */
+}
+
+.navbar.scrolled .social-icons a {
+    color: black;
+}
+
+/*tile pics slideshow*/
+.card img {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the entire space without distortion */
+}
+
+.slideshow img {
+    width: 100%;
+    height: 200px; /* Match the height of the card images */
+    object-fit: cover; /* Ensures the image covers the entire space without distortion */
+}
+
+
+
+/*the images transistion on destination tiles*/
+.slick-slider .slick-list .slick-track .slick-slide {
+    transition: opacity 1s ease-in-out; /* This is where the cross dissolve effect is defined */
+    opacity: 1;
+}
+
+.slick-slider .slick-list .slick-track .slick-slide.slick-active {
+    opacity: 1;
+}
+
+.slick-slider .slick-list .slick-track .slick-slide.slick-inactive {
+    opacity: 0;
+}
+
+
+
+
+/*whatsapp button*/
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 80px;
+    height: auto;
+    
+}
+
+.whatsapp-button {
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+/* Styling for Caption */
+.carousel-caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4); /* Optional: Slight overlay for better readability */
+}
+
+.carousel-caption h5 {
+    font-size: 3rem; /* Larger heading */
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+}
+
+.carousel-caption p {
+    font-size: 1.5rem; /* Larger paragraph */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.btn-success:hover {
+    background-color: #1ebe57 !important;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.5);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 2rem; /* Adjust for smaller screens */
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+
+.carousel-caption h1 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/*scrollbar thingstodo*/
+
+.scrollable-container {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 15px; /* Adds spacing between cards */
+    padding-bottom: 10px; /* Adds space for the scrollbar */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #f1f1f1;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.scrollable-container::-webkit-scrollbar {
+    height: 8px; /* Controls the height of the scrollbar */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Ensure each card has a minimum width */
+.scrollable-container .card {
+    flex: 0 0 auto;
+    min-width: 280px;
+    max-width: 300px;
+}
+
+
+
+/*about slideshow*/
+
+.about-slideshow {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.about-slideshow-img {
+    width: 100%;
+    height: 350px; /* Adjust to your desired height */
+    object-fit: cover; /* Ensures images maintain aspect ratio while filling the height */
+}
+
+

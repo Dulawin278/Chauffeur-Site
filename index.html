@@ -1,0 +1,580 @@
+<!--Improvements suggestions
+Whatsapp chat link
+Trip advisor link
+Reviews
+-->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HN Tours - Your Travel Partner In Sri Lanka</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--added for destination tiles pic change-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    
+
+</head>
+<body>
+
+
+    <section id="home">
+        <!--NAVIGATION BAR-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+            <div class="container">
+                <!-- Logo on the Left -->
+                <a class="navbar-brand" href="index.html"><img src="Square Logo.png"></a>
+                
+                <!-- Hamburger Menu for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Centered Links and Social Icons -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Centered Links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#thingstodo">Things To Do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destinations">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactus">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Social Icons on the Right -->
+                    <div class="social-icons d-flex align-items-center">
+                        <a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/94771234567" target="_blank" class="text-dark me-3">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="#" target="_blank" class="text-dark">
+                            <img src="pngwing.com (7).png" alt="TripAdvisor" style="width: 30px; height:auto; margin-bottom: 3px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+            
+            
+        
+        <!--whatsapp button-->
+        <a href="https://wa.me/YourNumber" target="_blank" class="whatsapp-button">
+            <img src="pngwing.com (8).png" alt="WhatsApp">
+        </a>
+    
+        <!--SLIDESHOW--> 
+        <!-- SLIDESHOW -->
+        <div id="photoSlideshow" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="17.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="11.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="13.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="2.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="6.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="14.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="19.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="15.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="16.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="4.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="5.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="12.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="3.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="13.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <div 
+                class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center"
+                style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 10px;"
+            >
+                <div class="d-flex align-items-center justify-content-center">
+                    <h1 class="mb-3 text-white fw-bold" 
+                        style="font-size: calc(1.5rem + 1vw);"
+                    >
+                        WELCOME TO SRI LANKA
+                    </h1>
+                </div>
+                <p class="mb-4 text-white" style="font-size: calc(1rem + 0.5vw);">
+                    Discover breathtaking beaches, ancient landmarks, and lush landscapes with HN Tours.
+                </p>
+                <!-- WhatsApp Button -->
+                <a
+                    href="https://wa.me/94771234567?text=Hello!%20I%20would%20like%20to%20book%20a%20tour."
+                    target="_blank"
+                    class="btn btn-success btn-lg"
+                    style="background-color: #21b658; border-color: #25d366; font-size: 1rem;"
+                >
+                    <i class="bi bi-whatsapp"></i> Book Me on WhatsApp
+                </a>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#photoSlideshow" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#photoSlideshow" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+    
+
+
+
+    <!--ABOUT ME   Who am I?   include small slideshow with clients-->
+    <section id="aboutus" class="py-5 bg-light">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Hello! I'm Sugath Weerasinghe, a licensed chauffeur in Sri Lanka, offering private driver services to help you explore this beautiful island with ease and comfort. Whether you're looking to visit stunning beaches, historical landmarks, or scenic hill country, I’ll ensure a smooth and enjoyable journey.</p>
+                    <p>My car can comfortably accommodate up to three passengers, making it perfect for couples, small groups, or solo travelers. From the moment you arrive, I provide reliable airport pickups, personalized tours, and hassle-free transport to your destinations—all tailored to your preferences.</p>
+                    <p>Travel stress-free while I take care of the driving, so you can focus on making unforgettable memories in Sri Lanka. I look forward to being part of your journey!</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-slideshow">
+                        <div><img src="relax3.jpg" class="about-slideshow-img" alt="relaxation 1"></div>
+                        <div><img src="relax1.webp" class="about-slideshow-img" alt="relaxation 2"></div>
+                        <div><img src="relax2.jpg" class="about-slideshow-img" alt="relaxation 3"></div>
+                        <div><img src="ella.jpg" class="about-slideshow-img" alt="relaxation 4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Why choose me-->
+    <section id="whychooseme" class="py-5 bg-light">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Why Choose Me?</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-check-circle-fill display-4 text-success"></i>
+                    <h4>Licensed Chauffeur</h4>
+                    <p>Travel with confidence knowing you’re in the hands of a licensed chauffeur in Sri Lanka.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-cash-stack display-4 text-warning"></i>
+                    <h4>Affordable Rates</h4>
+                    <p>Experience premium chauffeur service at prices that won't break the bank.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-globe display-4 text-primary"></i>
+                    <h4>English Fluency</h4>
+                    <p>Smooth communication guaranteed with fluent English-speaking service.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-car-front-fill display-4 text-danger"></i>
+                    <h4>Comfort & Convenience</h4>
+                    <p>Travel comfortably with up to 3 passengers in a cozy, spacious ride.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-tree display-4 text-success"></i>
+                    <h4>Explore Sri Lanka Your Way</h4>
+                    <p>Discover Sri Lanka’s beauty with personalized travel experiences.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-clock-fill display-4 text-dark"></i>
+                    <h4>Punctuality You Can Rely On</h4>
+                    <p>Timely pick-ups and smooth journeys to fit your schedule perfectly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- "Things to Do" Section -->
+    <section id="thingstodo" class="py-5 bg-light">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Things to do in Sri Lanka</h2>
+            <div class="scrollable-container">
+                <div class="card" style="min-width: 300px;">
+                    <div class="slideshow">
+                        <div><img src="relax3.jpg" class="card-img-top" alt="relaxation 1"></div>
+                        <div><img src="relax1.webp" class="card-img-top" alt="relaxation 2"></div>
+                        <div><img src="relax2.jpg" class="card-img-top" alt="relaxation 3"></div>
+                        <div><img src="ella.jpg" class="card-img-top" alt="relaxation 4"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Relaxation</h5>
+                        <p class="card-text">Relax on golden beaches, enjoy Ayurvedic spa treatments, and stroll through serene tea estates.</p>
+                    </div>
+                </div>
+                <div class="card" style="min-width: 300px;">
+                    <div class="slideshow">
+                        <div><img src="historical2.avif" class="card-img-top" alt="historical 1"></div>
+                        <div><img src="historical1.jpg" class="card-img-top" alt="historical 2"></div>
+                        <div><img src="sigiriya3.jpg" class="card-img-top" alt="historical 3"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Historical and Cultural Sites</h5>
+                        <p class="card-text">Explore ancient cities, sacred temples, and iconic landmarks like Sigiriya.</p>
+                    </div>
+                </div>
+                <div class="card" style="min-width: 300px;">
+                    <div class="slideshow">
+                        <div><img src="nature.jpg" class="card-img-top" alt="nature 1"></div>
+                        <div><img src="nature2.jpg" class="card-img-top" alt="nature 2"></div>
+                        <div><img src="yala.jpeg" class="card-img-top" alt="nature 3"></div>
+                        <div><img src="the-orphanage-was-founded.jpg" class="card-img-top" alt="nature 4"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Nature and Wildlife</h5>
+                        <p class="card-text">Discover exotic wildlife, lush forests, and breathtaking landscapes in national parks.</p>
+                    </div>
+                </div>
+                <div class="card" style="min-width: 300px;">
+                    <div class="slideshow">
+                        <div><img src="ella4.jpg" class="card-img-top" alt="adventure 1"></div>
+                        <div><img src="sports.jpg" class="card-img-top" alt="adventure 2"></div>
+                        <div><img src="nuwaraeliya5.jpg" class="card-img-top" alt="adventure 3"></div>
+                        <div><img src="mirissa5.jpeg" class="card-img-top" alt="adventure 3"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Scenic and Adventurous Activities</h5>
+                        <p class="card-text">Explore mountain peaks, experience breathtaking hikes, and enjoy thrilling water sports.</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    
+
+
+
+    <!--DESTINATIONS-->
+    <section id="destinations" class="py-5 bg-light">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Top Destinations</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="slideshow">
+                            <div><img src="sigiriya.jpeg" alt="Sigiriya 1"></div>
+                            <div><img src="sigiriya3.jpg" alt="Sigiriya 2"></div>
+                            <div><img src="sigiriya5.jpg" alt="Sigiriya 3"></div>
+                            <div><img src="sigiriya4.png" alt="Sigiriya 4"></div>
+                            <div><img src="sigirya7.webp" alt="Sigiriya 5"></div>
+                            <div><img src="sigiriya6.jpeg" alt="Sigiriya 6"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sigiriya</h5>
+                            <p class="card-text">Climb the iconic Lion Rock and explore ancient frescoes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="slideshow">
+                            <div><img src="ella.jpg" alt="ella 1"></div>
+                            <div><img src="ella3.jpg" alt="ella 2"></div>
+                            <div><img src="ella2.webp" alt="ella 3"></div>
+                            <div><img src="ella4.jpg" alt="ella 4"></div>
+                            <div><img src="ella5.jpg" alt="ella 5"></div>
+                            <div><img src="ella6.webp" alt="ella 6"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ella</h5>
+                            <p class="card-text">Experience Stunning Hikes, Waterfalls, and Tea Plantations in Sri Lanka’s Central Highlands</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="slideshow">
+                            <div><img src="sripada.jpg" alt="sripada 1"></div>
+                            <div><img src="sripada2.jpg" alt="sripada 2"></div>
+                            <div><img src="sripada3.jpg" alt="sripada 3"></div>
+                            <div><img src="sripada4.avif" alt="sripada 4"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sri Pada (Adam's Peak)</h5>
+                            <p class="card-text">Experience the mystical allure of Adam's Peak, a sacred mountain with a footprint-shaped rock formation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="slideshow">
+                            <div><img src="kandy.avif" alt="kandy 1"></div>
+                            <div><img src="kandy5.jpg" alt="kandy 2"></div>
+                            <div><img src="kandy3.JPG" alt="kandy 3"></div>
+                            <div><img src="kandy4.jpg" alt="kandy 4"></div>
+                            <div><img src="kandy6.jpg" alt="kandy 5"></div>
+                            <div><img src="perahera.jpg" alt="kandy 6"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Kandy</h5>
+                            <p class="card-text">The cultural capital of Sri Lanka, home to the sacred Temple of the Tooth and serene lake views.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="slideshow">
+                            <div><img src="anuradhapura1.jpg" alt="Anuradhapura 1"></div>
+                            <div><img src="anuradhapura2.jpg" alt="Anuradhapura 3"></div>
+                            <div><img src="anuradhapura4.jpg" alt="Anuradhapura 4"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Anuradhapura</h5>
+                            <p class="card-text">An ancient city filled with majestic stupas, sacred Bodhi trees, and a rich history of Sri Lankan Buddhism.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="slideshow">
+                            <div><img src="galle.jpg" alt="Galle 1"></div>
+                            <div><img src="galle3.jpg" alt="Galle 2"></div>
+                            <div><img src="galle2.jpeg" alt="Galle 3"></div>
+                            <div><img src="galle4.webp" alt="Galle 4"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Galle</h5>
+                            <p class="card-text">A coastal city famous for its Dutch colonial architecture and the iconic Galle Fort.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="slideshow">
+                            <div><img src="nuwaraeliya1.jpeg" alt="NuwaraEliya 1"></div>
+                            <div><img src="nuwaraeliya5.jpg" alt="NuwaraEliya 2"></div>
+                            <div><img src="nuwaraeliya2.webp" alt="NuwaraEliya 3"></div>
+                            <div><img src="nuwaraeliya4.jpg" alt="NuwaraEliya 4"></div>
+                            <div><img src="nuwaraeliya3.jpg" alt="NuwaraEliya 5"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Nuwara Eliya</h5>
+                            <p class="card-text">Known as 'Little England,' a hill station with lush tea plantations and cool, misty weather.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="slideshow">
+                            <div><img src="mirissa.jpg" alt="Mirissa 1"></div>
+                            <div><img src="mirissa3.jpg" alt="Mirissa 2"></div>
+                            <div><img src="mirissa2.jpg" alt="Mirissa 3"></div>
+                            <div><img src="mirissa5.jpeg" alt="Mirissa 4"></div>
+                            <div><img src="mirissa4.jpg" alt="Mirissa 5"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mirissa</h5>
+                            <p class="card-text">A beach paradise perfect for whale watching, surfing, and relaxing in a tropical setting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="slideshow">
+                            <div><img src="yala.jpeg" alt="yala 1"></div>
+                            <div><img src="yala2.jpg" alt="yala 2"></div>
+                            <div><img src="yala3.jpg" alt="yala 3"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Yala National Park</h5>
+                            <p class="card-text">A premier wildlife destination offering safaris to spot leopards, elephants, and diverse bird species.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--image credits-->
+    <p style="font-size: 12px; color: gray; text-align: center; margin-top: 10px;">
+        Images used on this website are credited to their respective owners. No copyright infringement intended.
+    </p>
+
+
+    <!--FOOTER-->
+    <section id="contactus">
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row d-flex justify-content-between text-center">
+                <!-- Logo Section -->
+                <div class="col-md-3 mb-3 d-flex flex-column justify-content-center align-items-center">
+                    <img src="ROUND LOGO.png" style="width:200px; height:auto;">
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-3 mb-3 d-flex flex-column justify-content-center">
+                    <h5 class="text-uppercase">Contact Me</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="mailto:info@hntours.com" class="text-white text-decoration-none">
+                                <i class="bi bi-envelope"></i> Email: info@hntours.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+94771234567" class="text-white text-decoration-none">
+                                <i class="bi bi-telephone"></i> Phone: +94 77 123 4567
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/94771234567" target="_blank" class="text-white text-decoration-none">
+                                <i class="bi bi-whatsapp"></i> WhatsApp: +94 77 123 4567
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-md-3 mb-3 d-flex flex-column justify-content-center">
+                    <h5 class="text-uppercase">Follow Me</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-facebook me-2"></i> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-instagram me-2"></i> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- TripAdvisor Section -->
+                <div class="col-md-3 mb-3 d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="text-uppercase">Find Me On TripAdvisor</h5>
+                    <a href="#" class="d-block">
+                        <img src="tripadvisor.png" alt="TripAdvisor" style="width: 200px;">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Text -->
+            <p align="center" style="margin: 0%;">&copy; 2025 HN Tours. All rights reserved.</p>
+        </div>
+    </footer>
+</section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slideshow').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                fade: true, // Enables the cross dissolve effect
+                cssEase: 'linear'
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.about-slideshow').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                fade: true, // Enables the cross dissolve effect
+                cssEase: 'linear'
+            });
+        });
+    </script>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
